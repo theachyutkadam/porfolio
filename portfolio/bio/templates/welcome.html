@@ -1,0 +1,230 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Portfolio</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/starter-template/starter-template.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://technext.github.io/mark/css/bootstrap.css" rel="stylesheet">
+    <link href="https://technext.github.io/mark/css/fontawesome-all.css" rel="stylesheet">
+    <link href="https://technext.github.io/mark/css/styles.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-0">
+      <a class="navbar-brand" href="/bio"> <img src="{%static 'logo.jpeg' %}" width="35" height="35 " alt="alternative"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto text-right">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#project_details">Project Details</a>
+              <a class="dropdown-item" href="#carrier">Carrier</a>
+              <a class="dropdown-item" href="#contact">Contact</a>
+            </div>
+          </li>
+        </ul>
+        <!--<form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </nav>
+    <div style="margin: -35px 5px;">
+      <img src="{%static 'tech.jpg' %}" height="580" width="1215">
+    </div><br><br>
+
+
+    <!-- About-->
+    <div id="about" class="basic-1" style="background-color: yellow;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-container first">
+                        <h2 class="font-weight-bold">Hi there I'm Achyut,</h2>
+                        <p>And I love to create beautiful and efficient websites for my customers. I love going through the entire process with the customer from concept, to design and then development and launch</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-container second">
+                        <div class="font-weight-bold text-primary">2023 - PRESENT</div>
+                        <h6 class="font-weight-bold">Freelance Web Developer</h6>
+                        <p>Working happily on my own web projects</p>
+                        <div class="font-weight-bold text-primary">2020 - 2022</div>
+                        <h6 class="font-weight-bold">Lead Web Developer</h6>
+                        <p>Beautiful project for a major digital agency</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-container third">
+                        <div class="font-weight-bold text-primary">2019 - 2020</div>
+                        <h6 class="font-weight-bold">Senior Web Designer</h6>
+                        <p>Inhouse web designer for ecommerce firm</p>
+                        <div class="font-weight-bold text-primary">2018 - 2019</div>
+                        <h6 class="font-weight-bold">Junior Web Designer</h6>
+                        <p>Junior web designer for small web agency</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of about -->
+
+    <!-- Services -->
+    <div id="services" class="basic-2" style="background-color: powderblue;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Offered services</h2>
+                    <p class="p-heading">Web design and development have been my bread and butter for more than 3 years. During that time I've discovered that I can help startups and companies with the following services</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-box">
+                        <i class="far fa-gem"></i>
+                        <h4>DESIGN</h4>
+                        <p>Successful online projects start with good design. It establishes a solid foundation for future development and allows for long term growth</p>
+                    </div> <!-- end of text-box -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-box">
+                        <i class="fas fa-code"></i>
+                        <h4>DEVELOPMENT</h4>
+                        <p>I can code my own designs or even use the customer's design as base. My focus is to generate clean code that's well structured for reliability</p>
+                    </div> <!-- end of text-box -->
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <div class="text-box">
+                        <i class="fas fa-tv"></i>
+                        <h4>BASIC SEO</h4>
+                        <p>i can setup your project to use basic SEO principles which will push your project to the first page on search engines and save you ads money</p>
+                    </div> <!-- end of text-box -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of services -->
+
+    <main role="main" class="container">
+      <div class="container my-3" id="project_details">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{%static 'card_1.jpg'%}" class="d-block w-150" alt="...">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{%static 'card_2.jpg'%}" class="d-block w-150" alt="...">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{%static 'card_3.jpg'%}" class="d-block w-150" alt="...">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{%static 'card_4.jpg'%}" class="d-block w-150" alt="...">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{%static 'card_5.jpg'%}" class="d-block w-150" alt="...">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{%static 'card_6.jpg'%}" class="d-block w-150" alt="...">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{%static 'card_7.jpg'%}" class="d-block w-150" alt="...">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{%static 'card_8.jpg'%}" class="d-block w-150" alt="...">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="{%static 'card_9.jpg'%}" class="d-block w-150" alt="...">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
