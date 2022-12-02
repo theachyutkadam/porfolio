@@ -6,12 +6,10 @@ def bio(request):
     return render(request, 'bio.html', {})
 
 def welcome(request):
-    response = requests.get('http://localhost:8000/experiance/1')
-    experiance = response.json()
-    # return render(request, 'welcome.html', {
-    #               'name': experiance['name'],
-    #               'start_date': experiance['start_date'],
-    #               'end_date': experiance['end_date']}
-    #             )
-    return render(request, 'welcome.html', {'role': experiance['role']}
-                )
+    response = requests.get('http://localhost:8000/experiance/')
+    resume_response = requests.get('http://localhost:8000/resume/')
+
+    experiances = response.json()
+    resume = resume_response.json()
+    return render(request, 'welcome.html', {'experiances': experiances, 'resume': resume[0], 'flag': True})
+
