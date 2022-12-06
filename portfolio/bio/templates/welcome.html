@@ -72,30 +72,26 @@
     <!-- About-->
     <div id="about" class="basic-1">
         <div class="container">
+          <div class="col-lg-12">
+              <div class="text-container first">
+                  <h2 class="font-weight-bold">Hi there I'm Achyut,</h2>
+                  <p>And I love to create beautiful and efficient websites for my customers. I love going through the entire process with the customer from concept, to design and then development and launch</p>
+              </div> <!-- end of text-container -->
+          </div><br><br> <!-- end of col -->
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container first">
-                        <h2 class="font-weight-bold">Hi there I'm Achyut,</h2>
-                        <p>And I love to create beautiful and efficient websites for my customers. I love going through the entire process with the customer from concept, to design and then development and launch</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-
-
                 {% for experiance in experiances %}
                     {% if flag == True %}
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <div class="text-container second">
                               <div class="font-weight-bold text-primary">
                                 {{ experiance.start_date}} - {{ experiance.end_date}}
                               </div>
                               <h6 class="font-weight-bold">{{ experiance.role }}</h6>
                               <p>{{ experiance.description }}</p>
-                              { flag = False }
                             </div> <!-- end of text-container -->
                         </div> <!-- end of col -->
                     {% else %}
                         <div class="text-container third">
-                            { flag = True }
                             <div class="font-weight-bold text-primary">
                                 {{ experiance.start_date}} - {{ experiance.end_date}}
                             </div>
